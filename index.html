@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김판원 — PHP 시니어 개발자 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <span class="nav-logo">KPW<span class="nav-dot">.</span></span>
+    <ul class="nav-links">
+      <li><a href="#about">소개</a></li>
+      <li><a href="#skills">기술</a></li>
+      <li><a href="#career">경력</a></li>
+      <li><a href="#education">교육</a></li>
+      <li><a href="#projects">프로젝트</a></li>
+      <li><a href="#contact" class="nav-cta">연락하기</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="메뉴">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero" id="hero">
+  <div class="hero-bg-code" aria-hidden="true" id="bgCode"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-eyebrow">PHP Senior Developer</p>
+      <h1 class="hero-name">김 판 원<span class="hero-cursor">|</span></h1>
+      <p class="hero-sub" id="typedSub"></p>
+      <div class="hero-tags">
+        <span>PHP</span><span>MySQL</span><span>Linux</span>
+        <span>AI API</span><span>바이브코딩</span><span>Full-Stack</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        <a href="#contact" class="btn btn-ghost">연락하기</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+      <img src="images/photo.png" alt="김판원 증명사진" class="hero-photo" />
+      <div class="hero-badge">
+        <span class="badge-num">12<span class="badge-plus">+</span></span>
+        <span class="badge-label">년 경력</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">About Me</p>
+      <h2 class="section-title">자기소개</h2>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>2001년 웹개발을 시작으로 <strong>25년간 PHP 풀스택 개발자</strong>로 성장해왔습니다. 음악 사이트부터 쇼핑몰, 전선 포탈 인트라넷, 연구비 결제 시스템, 전기전자부품 플랫폼까지 다양한 도메인을 기획·개발·운영 전 과정을 주도적으로 수행했습니다.</p>
+        <p>최근에는 <strong>AI API 연동과 바이브코딩</strong>을 적극 활용하며 AI 직원 플랫폼, 멀티모델 토론 플랫폼, 야외 무인 키오스크 등 실배포 웹서비스를 개발하고 있습니다.</p>
+        <ul class="about-info">
+          <li><span class="info-label">위치</span><span>서울특별시 금천구 시흥동</span></li>
+          <li><span class="info-label">학력</span><span>한양대학교 원자력공학과 (1995 졸업)</span></li>
+          <li><span class="info-label">어학</span><span>영어 비즈니스 회화 가능</span></li>
+          <li><span class="info-label">희망연봉</span><span>3,000만원 이상</span></li>
+        </ul>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card"><span class="stat-num">25<span class="stat-unit">년</span></span><span class="stat-label">웹개발 경험</span></div>
+        <div class="stat-card"><span class="stat-num">12.9<span class="stat-unit">년</span></span><span class="stat-label">실무 경력</span></div>
+        <div class="stat-card"><span class="stat-num">17<span class="stat-unit">+</span></span><span class="stat-label">프로젝트</span></div>
+        <div class="stat-card"><span class="stat-num">4<span class="stat-unit">종</span></span><span class="stat-label">플랫폼 개발</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section class="section skills dark-section" id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Tech Stack</p>
+      <h2 class="section-title">기술 스택</h2>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-group">
+        <h3 class="skill-group-title">Backend</h3>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <span class="skill-name">PHP (3/4/5)</span>
+            <div class="bar-track"><div class="bar-fill" data-w="95"></div></div>
+            <span class="skill-pct">25년</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">MySQL</span>
+            <div class="bar-track"><div class="bar-fill" data-w="88"></div></div>
+            <span class="skill-pct">DB설계</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">Linux 서버</span>
+            <div class="bar-track"><div class="bar-fill" data-w="85"></div></div>
+            <span class="skill-pct">구축·운영</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">Perl</span>
+            <div class="bar-track"><div class="bar-fill" data-w="60"></div></div>
+            <span class="skill-pct">초기경력</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Frontend</h3>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <span class="skill-name">HTML / CSS</span>
+            <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
+            <span class="skill-pct">실무</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">JavaScript</span>
+            <div class="bar-track"><div class="bar-fill" data-w="72"></div></div>
+            <span class="skill-pct">실무</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">React (학습중)</span>
+            <div class="bar-track"><div class="bar-fill" data-w="55"></div></div>
+            <span class="skill-pct">교육과정</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">AI & New Tech</h3>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <span class="skill-name">AI API 연동</span>
+            <div class="bar-track"><div class="bar-fill" data-w="82"></div></div>
+            <span class="skill-pct">실배포</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">바이브코딩</span>
+            <div class="bar-track"><div class="bar-fill" data-w="85"></div></div>
+            <span class="skill-pct">팀·개인</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">Chrome Extension</span>
+            <div class="bar-track"><div class="bar-fill" data-w="75"></div></div>
+            <span class="skill-pct">6개 개발</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">Python / FastAPI</span>
+            <div class="bar-track"><div class="bar-fill" data-w="50"></div></div>
+            <span class="skill-pct">교육과정</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skill-tags reveal">
+      <span>PHP</span><span>MySQL</span><span>Linux</span><span>Apache</span>
+      <span>HTML/CSS</span><span>JavaScript</span><span>React</span>
+      <span>Python</span><span>FastAPI</span><span>AI API</span>
+      <span>Chrome Extension</span><span>Android</span><span>Git</span>
+      <span>Notion API</span><span>Slack API</span><span>Vercel</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── CAREER ── -->
+<section class="section career" id="career">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Work Experience</p>
+      <h2 class="section-title">경력 사항 <span class="title-badge">총 12년 9개월</span></h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <h3 class="tl-company">영성미디어(주)</h3>
+              <p class="tl-role">PHP 개발자</p>
+            </div>
+            <div class="tl-meta">
+              <span class="tl-period">2023.03 – 2024.08</span>
+              <span class="tl-dur">1년 6개월</span>
+            </div>
+          </div>
+          <p class="tl-desc">PHP 기반 웹서비스 개발 및 유지보수, Linux 웹서버 운영, 서비스 안정화 및 기능 개선</p>
+          <div class="tl-techs"><span>PHP</span><span>MySQL</span><span>Linux</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <h3 class="tl-company">유파운드주식회사</h3>
+              <p class="tl-role">웹개발자</p>
+            </div>
+            <div class="tl-meta">
+              <span class="tl-period">2014.03 – 2016.07</span>
+              <span class="tl-dur">2년 5개월</span>
+            </div>
+          </div>
+          <p class="tl-desc">연구비결제 시스템 PSYS 설계·개발, 과학기자재 포탈 쇼핑몰 구축, RESTful API 및 DB 스키마 설계</p>
+          <div class="tl-techs"><span>PHP5</span><span>MySQL</span><span>Linux</span><span>결제시스템</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <h3 class="tl-company">(주)탑전선케이블</h3>
+              <p class="tl-role">웹개발자</p>
+            </div>
+            <div class="tl-meta">
+              <span class="tl-period">2005.11 – 2011.04</span>
+              <span class="tl-dur">5년 6개월</span>
+            </div>
+          </div>
+          <p class="tl-desc">전선포탈 쇼핑몰 및 사내 인트라넷 설계·구축·운영, PHP4 + Linux + MySQL 풀스택 단독 개발</p>
+          <div class="tl-techs"><span>PHP4</span><span>MySQL</span><span>Linux</span><span>인트라넷</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <h3 class="tl-company">아이온넷</h3>
+              <p class="tl-role">웹개발자 / 웹개발 운영</p>
+            </div>
+            <div class="tl-meta">
+              <span class="tl-period">2001.07 – 2004.10</span>
+              <span class="tl-dur">3년 4개월</span>
+            </div>
+          </div>
+          <p class="tl-desc">쇼핑몰 secoshop.com 구축, 음악 사이트(mp69, selfaudio) 개발·운영, PHP·Perl·Linux 실무 기반 확립</p>
+          <div class="tl-techs"><span>PHP3</span><span>Perl</span><span>Linux</span><span>MySQL</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section class="section education dark-section" id="education">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Education & Training</p>
+      <h2 class="section-title">교육 및 학력</h2>
+    </div>
+    <div class="edu-grid reveal">
+      <div class="edu-card featured">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-body">
+          <p class="edu-period">2025.12.30 – 2026.06.24</p>
+          <h3 class="edu-title">인공지능 웹서비스 풀스택 개발자 과정</h3>
+          <p class="edu-org">코드랩아카데미</p>
+          <div class="edu-tags">
+            <span>Python</span><span>FastAPI</span><span>React</span>
+            <span>AI API 연동</span><span>DB 설계</span><span>클라우드 배포</span><span>바이브코딩</span>
+          </div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">🏛️</div>
+        <div class="edu-body">
+          <p class="edu-period">1989.03 – 1995.02</p>
+          <h3 class="edu-title">원자력공학과 졸업</h3>
+          <p class="edu-org">한양대학교 (학점 3.02 / 4.5)</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">📋</div>
+        <div class="edu-body">
+          <p class="edu-period">자격증 / 기타</p>
+          <h3 class="edu-title">보유 자격</h3>
+          <p class="edu-org">1종 보통 운전면허 · Microsoft Office</p>
+          <p class="edu-org">영어 비즈니스 회화 가능</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Projects</p>
+      <h2 class="section-title">프로젝트</h2>
+    </div>
+
+    <!-- 필터 탭 -->
+    <div class="proj-filter reveal">
+      <button class="filter-btn active" data-filter="all">전체</button>
+      <button class="filter-btn" data-filter="webapp">웹앱</button>
+      <button class="filter-btn" data-filter="team">팀 프로젝트</button>
+      <button class="filter-btn" data-filter="chrome">크롬 확장</button>
+      <button class="filter-btn" data-filter="win">윈도우 앱</button>
+      <button class="filter-btn" data-filter="mobile">모바일</button>
+    </div>
+
+    <div class="proj-grid reveal" id="projGrid">
+
+      <!-- 팀 프로젝트 -->
+      <div class="proj-card featured-card" data-cat="team">
+        <div class="proj-badge team">팀 프로젝트</div>
+        <h3 class="proj-name">🍯 허니맛 프로젝트</h3>
+        <p class="proj-period">2026.02.26 – 2026.03.22</p>
+        <p class="proj-desc">코드랩아카데미 팀 프로젝트. 백엔드 API 설계·구현과 데이터베이스 스키마 설계를 담당. 바이브코딩(AI 보조 개발) 방식으로 생산성을 높이며 RESTful API-DB 연동 구조를 완성.</p>
+        <div class="proj-techs"><span>백엔드 API</span><span>DB 설계</span><span>바이브코딩</span><span>MySQL</span></div>
+      </div>
+
+      <!-- 실배포 웹앱 -->
+      <div class="proj-card" data-cat="webapp">
+        <div class="proj-badge webapp">웹앱 · 실배포</div>
+        <h3 class="proj-name">🤖 AI 직원 플랫폼</h3>
+        <p class="proj-desc">전문가의 업무 노하우를 AI 직원으로 제작·검수·판매하는 마켓플랫폼. 메이커 수익 80%, Stripe 결제 연동, 카테고리별 AI 직원 마켓.</p>
+        <div class="proj-techs"><span>AI API</span><span>마켓플랫폼</span><span>Vercel</span></div>
+        <a href="https://ai-worker-platform.vercel.app/" target="_blank" class="proj-link">사이트 보기 ↗</a>
+      </div>
+
+      <div class="proj-card" data-cat="webapp">
+        <div class="proj-badge webapp">웹앱 · 실배포</div>
+        <h3 class="proj-name">🖥️ 야외 무인 키오스크</h3>
+        <p class="proj-desc">야외 설치 디바이스에서 상품을 주문하고 산지 직배송을 받는 무인 주문 플랫폼. 터치 UI 최적화, 모바일·태블릿 반응형.</p>
+        <div class="proj-techs"><span>키오스크 UI</span><span>무인주문</span><span>Vercel</span></div>
+        <a href="https://outdoor-kiosk.vercel.app/" target="_blank" class="proj-link">사이트 보기 ↗</a>
+      </div>
+
+      <div class="proj-card" data-cat="webapp">
+        <div class="proj-badge webapp">웹앱 · 실배포</div>
+        <h3 class="proj-name">⚔️ AI Arena 토론 (프론트)</h3>
+        <p class="proj-desc">GPT·Claude·Gemini가 동시에 토론하고 Judge AI가 승자를 선정하는 멀티모델 경쟁 플랫폼. 프론트엔드 담당.</p>
+        <div class="proj-techs"><span>멀티모델 AI</span><span>프론트엔드</span><span>Vercel</span></div>
+        <a href="https://ai-debate-gamma.vercel.app/" target="_blank" class="proj-link">사이트 보기 ↗</a>
+      </div>
+
+      <div class="proj-card" data-cat="webapp">
+        <div class="proj-badge webapp">웹앱</div>
+        <h3 class="proj-name">⚡ AI 애자일 플로우</h3>
+        <p class="proj-desc">AI 기반 애자일 일정 자동화 플로우 시스템. 프로젝트 태스크를 AI가 분석·배분·추적하는 자동화 도구.</p>
+        <div class="proj-techs"><span>AI 자동화</span><span>애자일</span><span>플로우</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="webapp">
+        <div class="proj-badge webapp">웹앱</div>
+        <h3 class="proj-name">🧊 3D 모델링 데모</h3>
+        <p class="proj-desc">브라우저 기반 3D 인터랙티브 데모 페이지. WebGL을 활용한 3D 모델 렌더링 및 사용자 조작 구현.</p>
+        <div class="proj-techs"><span>3D</span><span>WebGL</span><span>인터랙티브</span></div>
+      </div>
+
+      <!-- 크롬 확장 -->
+      <div class="proj-card" data-cat="chrome">
+        <div class="proj-badge chrome">크롬 확장</div>
+        <h3 class="proj-name">📖 AI 100줄 소설 생성기</h3>
+        <p class="proj-desc">원클릭으로 100줄 단편소설을 AI로 생성하는 크롬 확장 프로그램.</p>
+        <div class="proj-techs"><span>Chrome Extension</span><span>AI 생성</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="chrome">
+        <div class="proj-badge chrome">크롬 확장</div>
+        <h3 class="proj-name">🎬 AI 웹툰 시나리오 생성기</h3>
+        <p class="proj-desc">웹툰 스토리·시나리오를 AI로 자동 생성하는 크롬 확장.</p>
+        <div class="proj-techs"><span>Chrome Extension</span><span>스토리 AI</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="chrome">
+        <div class="proj-badge chrome">크롬 확장</div>
+        <h3 class="proj-name">📝 AI 텍스트 요약 (스머리)</h3>
+        <p class="proj-desc">웹페이지 텍스트를 AI로 즉시 요약하는 확장. 핵심만 빠르게 파악.</p>
+        <div class="proj-techs"><span>Chrome Extension</span><span>텍스트 요약</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="chrome">
+        <div class="proj-badge chrome">크롬 확장</div>
+        <h3 class="proj-name">🎵 AI 가사 생성기</h3>
+        <p class="proj-desc">장르·키워드 입력 시 AI가 가사를 자동 생성하는 크롬 확장.</p>
+        <div class="proj-techs"><span>Chrome Extension</span><span>생성형 AI</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="chrome">
+        <div class="proj-badge chrome">크롬 확장</div>
+        <h3 class="proj-name">🎭 AI 캐릭터</h3>
+        <p class="proj-desc">AI 캐릭터 페르소나 기반 대화형 크롬 확장 프로그램.</p>
+        <div class="proj-techs"><span>Chrome Extension</span><span>캐릭터 AI</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="chrome">
+        <div class="proj-badge chrome">크롬 확장</div>
+        <h3 class="proj-name">🔍 AI 요약 키워드 생성기</h3>
+        <p class="proj-desc">웹 콘텐츠 핵심 키워드 자동 추출 및 요약 크롬 확장.</p>
+        <div class="proj-techs"><span>Chrome Extension</span><span>키워드 추출</span></div>
+      </div>
+
+      <!-- 윈도우 앱 -->
+      <div class="proj-card" data-cat="win">
+        <div class="proj-badge win">윈도우 앱</div>
+        <h3 class="proj-name">📋 마이 클립 플로우</h3>
+        <p class="proj-desc">클립보드 히스토리 관리 및 플로우 자동화 도구. 복사한 내용을 맥락별로 정리.</p>
+        <div class="proj-techs"><span>Windows</span><span>클립보드</span><span>생산성</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="win">
+        <div class="proj-badge win">윈도우 앱</div>
+        <h3 class="proj-name">📡 테스트 센서 시뮬레이터</h3>
+        <p class="proj-desc">하드웨어 센서 데이터를 가상으로 시뮬레이션하는 테스트 도구.</p>
+        <div class="proj-techs"><span>Windows</span><span>시뮬레이터</span><span>테스트</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="win">
+        <div class="proj-badge win">윈도우 앱</div>
+        <h3 class="proj-name">🎼 AI 가사 생성기 (Win)</h3>
+        <p class="proj-desc">데스크톱 환경에서 AI 기반 가사 생성 및 편집을 수행하는 윈도우 앱.</p>
+        <div class="proj-techs"><span>Windows</span><span>AI 생성</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="win">
+        <div class="proj-badge win">윈도우 앱</div>
+        <h3 class="proj-name">⌨️ CLI 셀피시</h3>
+        <p class="proj-desc">커맨드라인 기반 노션·슬랙 연동 자동화 도구. UI 디자인 자동화 기능 포함.</p>
+        <div class="proj-techs"><span>CLI</span><span>Notion API</span><span>Slack API</span></div>
+      </div>
+
+      <!-- 모바일 -->
+      <div class="proj-card" data-cat="mobile">
+        <div class="proj-badge mobile">모바일 · Android</div>
+        <h3 class="proj-name">📱 마이앱맨</h3>
+        <p class="proj-desc">Android용 AI 개인 어시스턴트 앱. 일상 업무를 AI가 보조하는 모바일 앱.</p>
+        <div class="proj-techs"><span>Android</span><span>AI 어시스턴트</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="mobile">
+        <div class="proj-badge mobile">모바일 · Android</div>
+        <h3 class="proj-name">🎵 AI 가사 생성기 (Android)</h3>
+        <p class="proj-desc">모바일 환경에서 AI 가사 생성을 제공하는 Android 앱.</p>
+        <div class="proj-techs"><span>Android</span><span>생성형 AI</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="section contact dark-section" id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Get In Touch</p>
+      <h2 class="section-title">연락하기</h2>
+    </div>
+    <div class="contact-wrap reveal">
+      <div class="contact-info">
+        <p class="contact-lead">함께 일하고 싶으시다면 편하게 연락주세요.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="c-icon">📧</span>
+            <div><p class="c-label">이메일</p><a href="mailto:panwon@hanmail.net">panwon@hanmail.net</a></div>
+          </li>
+          <li>
+            <span class="c-icon">📱</span>
+            <div><p class="c-label">휴대폰</p><a href="tel:010-5382-5707">010-5382-5707</a></div>
+          </li>
+          <li>
+            <span class="c-icon">📍</span>
+            <div><p class="c-label">위치</p><span>서울특별시 금천구 시흥동</span></div>
+          </li>
+          <li>
+            <span class="c-icon">💼</span>
+            <div><p class="c-label">희망 근무</p><span>정규직·계약직 / 경기 광주시·서울 금천구</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-links">
+        <a href="https://ai-worker-platform.vercel.app/" target="_blank" class="portfolio-link">
+          <span class="pl-icon">🤖</span>
+          <div><strong>AI 직원 플랫폼</strong><small>ai-worker-platform.vercel.app</small></div>
+          <span class="pl-arrow">↗</span>
+        </a>
+        <a href="https://outdoor-kiosk.vercel.app/" target="_blank" class="portfolio-link">
+          <span class="pl-icon">🖥️</span>
+          <div><strong>야외 무인 키오스크</strong><small>outdoor-kiosk.vercel.app</small></div>
+          <span class="pl-arrow">↗</span>
+        </a>
+        <a href="https://ai-debate-gamma.vercel.app/" target="_blank" class="portfolio-link">
+          <span class="pl-icon">⚔️</span>
+          <div><strong>AI Arena 토론</strong><small>ai-debate-gamma.vercel.app</small></div>
+          <span class="pl-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 김판원 · PHP Senior Developer · All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
