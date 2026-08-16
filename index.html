@@ -311,9 +311,11 @@
     <div class="proj-filter reveal">
       <button class="filter-btn active" data-filter="all">전체</button>
       <button class="filter-btn" data-filter="webapp">웹앱</button>
+      <button class="filter-btn" data-filter="robot">로보틱스</button>
       <button class="filter-btn" data-filter="team">팀 프로젝트</button>
       <button class="filter-btn" data-filter="chrome">크롬 확장</button>
       <button class="filter-btn" data-filter="win">윈도우 앱</button>
+      <button class="filter-btn" data-filter="linux">리눅스 앱</button>
       <button class="filter-btn" data-filter="mobile">모바일</button>
     </div>
 
@@ -326,6 +328,31 @@
         <p class="proj-period">2026.02.26 – 2026.03.22</p>
         <p class="proj-desc">코드랩아카데미 팀 프로젝트. 백엔드 API 설계·구현과 데이터베이스 스키마 설계를 담당. 바이브코딩(AI 보조 개발) 방식으로 생산성을 높이며 RESTful API-DB 연동 구조를 완성.</p>
         <div class="proj-techs"><span>백엔드 API</span><span>DB 설계</span><span>바이브코딩</span><span>MySQL</span></div>
+      </div>
+
+      <!-- 로보틱스 · AI -->
+      <div class="proj-card featured-card" data-cat="robot">
+        <div class="proj-badge robot">로보틱스 · AI</div>
+        <h3 class="proj-name">🏪 무인마트 통합 시스템</h3>
+        <p class="proj-period">2026.07.28 – 2026.08.11</p>
+        <p class="proj-desc">자율주행 로봇이 매장 상품을 집품하는 무인 매장 풀스택 시스템. FastAPI·PostgreSQL·Redis·MQTT 백엔드와 React 관제 대시보드, ROS2 Nav2 기반 다중 로봇 자율주행을 직접 설계·구현.</p>
+        <div class="proj-techs"><span>FastAPI</span><span>ROS2 Nav2</span><span>React</span><span>MQTT</span><span>Docker</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="robot">
+        <div class="proj-badge robot">로보틱스 · AI</div>
+        <h3 class="proj-name">♻️ AI 분리수거 로봇</h3>
+        <p class="proj-period">2026.07 – 2026.08 (약 1개월)</p>
+        <p class="proj-desc">YOLOv8 커스텀 모델로 재활용품을 실시간 검출·분류하고 FSM 기반 로봇 제어로 자동 분리수거를 수행. 실물 데이터 재학습과 Flask 실시간 대시보드까지 구현.</p>
+        <div class="proj-techs"><span>ROS2 Jazzy</span><span>YOLOv8</span><span>OpenCV</span><span>Flask</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="robot">
+        <div class="proj-badge robot">로보틱스 · AI</div>
+        <h3 class="proj-name">🍌 BananaSort</h3>
+        <p class="proj-period">2026.07.14 – 2026.07.15</p>
+        <p class="proj-desc">자연어 명령을 LLM이 해석해 YOLO 비전과 로봇팔 제어(MoveIt2)로 연결하는 엔드투엔드 파이프라인. 바나나 숙성도를 인식해 분류하며, 웹 대시보드와 WebRTC로 실시간 연동.</p>
+        <div class="proj-techs"><span>ROS2 Humble</span><span>YOLOv8</span><span>LLM 연동</span><span>WebRTC</span></div>
       </div>
 
       <!-- 실배포 웹앱 -->
@@ -410,6 +437,13 @@
         <div class="proj-techs"><span>Chrome Extension</span><span>키워드 추출</span></div>
       </div>
 
+      <div class="proj-card" data-cat="chrome">
+        <div class="proj-badge chrome">크롬 확장</div>
+        <h3 class="proj-name">📑 Markdown Viewer</h3>
+        <p class="proj-desc">로컬 파일과 웹페이지의 마크다운을 크롬에서 바로 렌더링하는 확장. GFM 스타일, 코드 하이라이팅, 다크모드, TOC를 지원.</p>
+        <div class="proj-techs"><span>Manifest V3</span><span>marked.js</span><span>highlight.js</span></div>
+      </div>
+
       <!-- 윈도우 앱 -->
       <div class="proj-card" data-cat="win">
         <div class="proj-badge win">윈도우 앱</div>
@@ -439,6 +473,39 @@
         <div class="proj-techs"><span>CLI</span><span>Notion API</span><span>Slack API</span></div>
       </div>
 
+      <!-- 리눅스 앱 -->
+      <div class="proj-card" data-cat="linux">
+        <div class="proj-badge linux">리눅스 앱</div>
+        <h3 class="proj-name">📄 MD Manager</h3>
+        <p class="proj-period">2026.08.05 – 2026.08.09</p>
+        <p class="proj-desc">우분투용 마크다운 파일 탐색·편집·미리보기 데스크톱 앱. 실시간 GFM 렌더링과 대용량 파일 트리를 가상 스크롤로 처리, .deb 패키지로 배포.</p>
+        <div class="proj-techs"><span>Python</span><span>GTK4</span><span>GtkSourceView</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="linux">
+        <div class="proj-badge linux">리눅스 앱</div>
+        <h3 class="proj-name">📋 ClipHistory Pro</h3>
+        <p class="proj-period">2026.06.30 – 2026.07.01</p>
+        <p class="proj-desc">전역 단축키와 시스템 트레이로 상주하는 클립보드 이력 관리 도구. AES-256 암호화 옵션과 태그·검색 기능을 지원.</p>
+        <div class="proj-techs"><span>Python</span><span>PySide6</span><span>AES-256</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="linux">
+        <div class="proj-badge linux">리눅스 앱</div>
+        <h3 class="proj-name">🧫 CellStory</h3>
+        <p class="proj-period">2026.08.12</p>
+        <p class="proj-desc">세포의 삼투압 기반 팽창·분열을 실시간 시각화하는 2D 물리 시뮬레이션. Hooke's Law와 점탄성 모델을 직접 구현.</p>
+        <div class="proj-techs"><span>Python</span><span>Pygame</span><span>PyMunk</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="linux">
+        <div class="proj-badge linux">리눅스 앱</div>
+        <h3 class="proj-name">🗒️ Ubuntu Sticky Notes</h3>
+        <p class="proj-period">2026.08.02 – 2026.08.14</p>
+        <p class="proj-desc">우분투 데스크톱용 포스트잇 메모 앱. X11/Wayland 환경별 전역 단축키 처리 차이를 대응하고 트레이 상주형으로 배포.</p>
+        <div class="proj-techs"><span>Python</span><span>PyQt6</span></div>
+      </div>
+
       <!-- 모바일 -->
       <div class="proj-card" data-cat="mobile">
         <div class="proj-badge mobile">모바일 · Android</div>
@@ -452,6 +519,38 @@
         <h3 class="proj-name">🎵 AI 가사 생성기 (Android)</h3>
         <p class="proj-desc">모바일 환경에서 AI 가사 생성을 제공하는 Android 앱.</p>
         <div class="proj-techs"><span>Android</span><span>생성형 AI</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="mobile">
+        <div class="proj-badge mobile">모바일 · Android</div>
+        <h3 class="proj-name">📍 SafeHome GPS</h3>
+        <p class="proj-period">2026.08.11 – 2026.08.13</p>
+        <p class="proj-desc">치매 환자 실종 방지를 위한 위치 송신·모니터링 앱. 포그라운드 서비스 기반 실시간 위치 추적, 안심존 이탈 감지 FCM 알림, SOS 긴급 버튼을 구현.</p>
+        <div class="proj-techs"><span>Kotlin</span><span>Jetpack Compose</span><span>Firebase</span><span>Google Maps</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="mobile">
+        <div class="proj-badge mobile">모바일 · Android</div>
+        <h3 class="proj-name">💊 복약 알리미</h3>
+        <p class="proj-period">2026.08</p>
+        <p class="proj-desc">치매 환자의 복약을 알람으로 안내하고 보호자가 원격 모니터링하는 앱. Room+SQLCipher 이중 암호화로 민감한 의료 데이터를 보호.</p>
+        <div class="proj-techs"><span>Kotlin</span><span>Jetpack Compose</span><span>SQLCipher</span><span>Firebase</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="mobile">
+        <div class="proj-badge mobile">모바일 · Android</div>
+        <h3 class="proj-name">🔍 노안 돋보기</h3>
+        <p class="proj-period">2026.08.05 – 2026.08.11</p>
+        <p class="proj-desc">CameraX 기반 카메라 돋보기 앱. 최대 10배 실시간 줌과 자체 구현한 손떨림 보정 알고리즘을 탑재.</p>
+        <div class="proj-techs"><span>Kotlin</span><span>CameraX</span></div>
+      </div>
+
+      <div class="proj-card" data-cat="mobile">
+        <div class="proj-badge mobile">모바일 · Android</div>
+        <h3 class="proj-name">📸 셀프캠</h3>
+        <p class="proj-period">2026.08.06 – 2026.08.09</p>
+        <p class="proj-desc">Camera2 API로 백그라운드에서 주기적으로 자동 촬영하는 셀프 모니터링 앱. 저조도 촬영 이슈를 트러블슈팅.</p>
+        <div class="proj-techs"><span>Kotlin</span><span>Camera2 API</span></div>
       </div>
 
     </div>
