@@ -148,7 +148,6 @@
 (function projectFilter() {
   const btns = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.proj-card');
-  const featuredCard = document.querySelector('.featured-card');
 
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -157,21 +156,11 @@
       const filter = btn.dataset.filter;
 
       cards.forEach(card => {
-        if (filter === 'all') {
+        const cat = card.dataset.cat;
+        if (filter === 'all' || cat === filter) {
           card.classList.remove('hidden');
-          if (card.classList.contains('featured-card')) {
-            card.style.gridColumn = 'span 3';
-          }
         } else {
-          const cat = card.dataset.cat;
-          if (cat === filter) {
-            card.classList.remove('hidden');
-            if (card.classList.contains('featured-card')) {
-              card.style.gridColumn = 'span 1';
-            }
-          } else {
-            card.classList.add('hidden');
-          }
+          card.classList.add('hidden');
         }
       });
     });

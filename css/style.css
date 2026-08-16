@@ -402,6 +402,8 @@ img { max-width: 100%; display: block; }
 .proj-card[data-cat="chrome"]::after { background: #EA5A0C; }
 .proj-card[data-cat="win"]::after    { background: #0369A1; }
 .proj-card[data-cat="mobile"]::after { background: #16A34A; }
+.proj-card[data-cat="robot"]::after  { background: #7C3AED; }
+.proj-card[data-cat="linux"]::after  { background: #B45309; }
 .proj-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.12); transform: translateY(-4px); border-color: var(--blue); }
 .proj-card.hidden { display: none; }
 .featured-card {
